@@ -72,6 +72,23 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 Nest is [MIT licensed](LICENSE).
 
+## Docker
+
+- postgres
+
+  ```
+  docker run -d -p 5444:5432 --name my-postgres -e POSTGRES_PASSWORD=password postgres
+  ```
+
+- pgadmin4 
+
+  ```
+  docker run -p 80:80 \
+  -e "PGADMIN_DEFAULT_EMAIL=rubenru94@hotmail.com" \
+  -e "PGADMIN_DEFAULT_PASSWORD=password" \
+  -d dpage/pgadmin4
+  ```
+
 ## Bibliography
 
 - [Create an API Rest With NestJS and PostgreSQL](https://medium.com/swlh/create-an-api-rest-with-nestjs-1954723e8234).
